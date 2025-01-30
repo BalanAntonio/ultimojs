@@ -1,0 +1,44 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Aggiungi nuovo abbonato</h1>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="esempio@gmail.com"><br>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="nome..."><br>
+        <button onclick="invia('aggiungiAbbonato')">Aggiungi</button>
+    </div>
+    <div>
+        <h1>Prenota attività</h1>
+        <label for="mail">Email</label>
+        <input type="text" id="mail" placeholder="esempio@gmail.com"><br>
+        <label for="attivita">Attività</label>
+        <input type="text" id="attivita" placeholder="Nome attività"><br>
+        
+        <button onclick="invia('prenotaAttivita')">Aggiungi</button>
+    </div>
+    <div>
+        <h1>Visualizza prenotazioni</h1>
+        <p id="lista"></p>
+        <label for="mail1"></label>
+        <input type="text" id="mail1" placeholder="esempio@gmail.com">
+        <button onclick="invia('visualizzaPrenotazioni')">Invia</button>
+    </div>
+    <div>
+        <h1>Rimuovi attività</h1>
+        <label for="mail2">Email</label>
+        <input type="text" id="mail2" placeholder="esempio@gmail.com"><br>
+        <label for="attivita1">Attività</label>
+        <input type="text" id="attivita1" placeholder="Nome attività"><br>
+        
+        <button onclick="invia('rimuoviAttivita')">Rimuovi</button>
+    </div>
+</body>
+</html>

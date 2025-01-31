@@ -20,7 +20,7 @@ function invia(input){
 }
 
 function aggiungiAbbonato(mail, nome){
-    if(mail && conta(mail)==1){
+    if(mail && conta(mail)==1 && nome){
         if(email[mail]){
             alert("Email già in uso");
         }else{
@@ -28,7 +28,7 @@ function aggiungiAbbonato(mail, nome){
         }
     }
     else{
-        alert("Email non valida");
+        alert("Email o nome non validi");
     }
 }
 

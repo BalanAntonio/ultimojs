@@ -20,10 +20,15 @@ function invia(input){
 }
 
 function aggiungiAbbonato(mail, nome){
-    if(email[mail]){
-        alert("Email già in uso");
-    }else{
-        email[mail] = { nome: nome, attivita: [] };
+    if(mail && conta(mail)==1){
+        if(email[mail]){
+            alert("Email già in uso");
+        }else{
+            email[mail] = { nome: nome, attivita: [] };
+        }
+    }
+    else{
+        alert("Email non valida");
     }
 }
 
@@ -71,3 +76,13 @@ prenotaAttivita("email@gmail.com","asdfgh")
 visualizzaPrenotazioni("email@gmail.com")
 rimuoviPrenotazione("email@gmail.com","asdfgh")
 visualizzaPrenotazioni("email@gmail.com")*/
+
+function conta(stringa){
+    let quantita = 0
+    for(let i = 0; i<stringa.length;i++){
+        if(stringa[i]=="@"){
+            quantita++;
+        }
+    }
+    return quantita;
+}
